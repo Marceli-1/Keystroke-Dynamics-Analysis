@@ -18,7 +18,7 @@ Usage:
 - **Collect and analyze data**: 
   python3 biometric-keystrokes.py --mode both --filename keystroke_data.csv --users 2
 - **Test user identity**: 
-  python3 biometric-keystrokes.py --mode test --stats_file stats.json
+  python3 biometric-keystrokes.py --mode test --stats_file stats.json --model_file model_and_encoders.pkl
 
 Files:
 - **keystroke_data.csv**: CSV file to store collected keystroke data.
