@@ -5,7 +5,7 @@ Keystroke Dynamics Data Collection and Biometric Identification using Machine Le
 
 """
 Keystroke Dynamics Data Collection and Analysis Script
-------------------------------------------------------
+
 
 This script allows you to collect and analyze keystroke dynamics data for multiple users.
 It supports four modes of operation: 'collect', 'analyze', 'both', and 'test'.
