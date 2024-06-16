@@ -4,7 +4,7 @@ Keystroke Dynamics Data Collection and Biometric Identification using Machine Le
 This script allows you to collect and analyze keystroke dynamics data for multiple users.
 It supports four modes of operation: 'collect', 'analyze', 'both', and 'test'.
 
-###Modes:
+### Modes:
 - **collect**: Collect keystroke data for multiple users and save it to a CSV file.
 - **analyze**: Analyze the collected keystroke data, train a machine learning model, and predict user identity.
 - **both**: Perform both data collection and analysis.
