@@ -12,13 +12,13 @@ It supports four modes of operation: 'collect', 'analyze', 'both', and 'test'.
 
 Usage:
 - **Collect data**: 
-  python3 biometric-keystrokes.py --mode collect --filename keystroke_data.csv --users 2
+  ```python3 biometric-keystrokes.py --mode collect --filename keystroke_data.csv --users 2```
 - **Analyze data**: 
-  python3 biometric-keystrokes.py --mode analyze --filename keystroke_data.csv
+  ```python3 biometric-keystrokes.py --mode analyze --filename keystroke_data.csv```
 - **Collect and analyze data**: 
-  python3 biometric-keystrokes.py --mode both --filename keystroke_data.csv --users 2
+  ```python3 biometric-keystrokes.py --mode both --filename keystroke_data.csv --users 2```
 - **Test user identity**: 
-  python3 biometric-keystrokes.py --mode test --stats_file stats.json --model_file model_and_encoders.pkl
+  ```python3 biometric-keystrokes.py --mode test --stats_file stats.json --model_file model_and_encoders.pkl```
 
 Files:
 - **keystroke_data.csv**: CSV file to store collected keystroke data.
