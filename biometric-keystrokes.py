@@ -244,7 +244,13 @@ def predict_and_validate_user(model, user_encoder, encoder, scaler, stats_file):
     
     print(f"Predicted User: {predicted_user_name}")
 
-    feedback = input("Was the prediction correct? (yes/no): ").strip().lower()
+    while True:
+        feedback = input("Was the prediction correct? (yes/no): ").strip().lower()
+        if feedback in ['yes', 'no']:
+            break
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
+    
     record_stats(stats_file, predicted_user_name, feedback == 'yes')
     return feedback == 'yes'
 
