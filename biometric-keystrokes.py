@@ -126,9 +126,9 @@ def preprocess_data(data, encoder=None, scaler=None, return_encoders=True):
 
     if scaler is None:
         scaler = StandardScaler()
-        temporal_features = scaler.fit_transform(data[['Press Timestamp', 'Hold Time', 'Time Since Previous Key Press']])
+        temporal_features = scaler.fit_transform(data[['Hold Time', 'Time Since Previous Key Press']])
     else:
-        temporal_features = scaler.transform(data[['Press Timestamp', 'Hold Time', 'Time Since Previous Key Press']])
+        temporal_features = scaler.transform(data[['Hold Time', 'Time Since Previous Key Press']])
 
     features = np.hstack((key_events, temporal_features))
 
